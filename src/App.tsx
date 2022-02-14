@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { FC } from 'react';
+import { Route, Switch } from 'react-router-dom';
 
-function App() {
+import { Home } from './modules/home';
+import { About } from './modules/about';
+import { Project } from './modules/project';
+import { Skill } from './modules/skill';
+import { Notfound } from './modules/notfound';
+import { LayoutCustom } from './modules/layout';
+
+
+const App: FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <LayoutCustom>
+        <Switch>
+          <Route exact path="/"   component={() => <Home />} />
+          <Route path="/about"    component={() => <About />} />
+          <Route path="/project"  component={() => <Project />} />
+          <Route path="/skill"    component={() => <Skill />} />
+          <Route path="/*"        component={() => <Notfound />} />
+        </Switch>
+      </LayoutCustom>
+    </>
+  )
 }
 
 export default App;
