@@ -24,11 +24,18 @@ const Header: React.FC = () => {
     }
   }, []);
 
+  const navlinkHandler = (path: string) => {
+    setPath(path);
+    history.push(path);
+  }
+
   
   const Logo = () => {
     return (
       <>
-        <div className={styles.headerLogo}>
+        <div
+          onClick={() => navlinkHandler("/")}
+          className={styles.headerLogo}>
           <ProLogoIcon className={styles.headerLogoIcon} /><span> Dipta | Portfolio</span>
         </div>
       </>
@@ -40,10 +47,7 @@ const Header: React.FC = () => {
       <div className={styles.headerICRNav}>
         {navs && navs.map(nav => (
           <div
-            onClick={() => {
-              setPath(nav.path);
-              history.push(nav.path);
-            }}
+            onClick={() => navlinkHandler(nav.path)}
             className={currPath === nav.path
               ? `${styles.navLink} ${styles.navLinkActive}`
               : `${styles.navLink}`
@@ -60,7 +64,7 @@ const Header: React.FC = () => {
   const DrawerComp = () => {
     return (
       <Drawer
-        title="Dipta | Portfolio"
+        title={<span className={styles.drawerTitle}>Dipta - Portfolio</span>}
         placement={'right'}
         closable={false}
         onClose={() => setIsVisible(false)}
@@ -73,7 +77,7 @@ const Header: React.FC = () => {
             <div
               onClick={() => {
                 setIsVisible(false);
-                history.push(nav.path);
+                navlinkHandler(nav.path);
               }}
               className={styles.drawerNavLink}
               key={nav.value}

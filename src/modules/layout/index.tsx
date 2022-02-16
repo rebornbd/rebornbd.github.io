@@ -1,5 +1,5 @@
-import LayoutCustom from "./layout";
+import Layout from "./layout";
 
 export {
-  LayoutCustom
+  Layout
 };

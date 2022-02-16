@@ -4,7 +4,9 @@ import styles from "./home.module.css";
 
 const Home = () => {
   return (
-    <div>home</div>
+    <>
+      <div>home</div>
+    </>
   )
 }
 

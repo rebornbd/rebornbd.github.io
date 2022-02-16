@@ -6,13 +6,13 @@ import { About } from './modules/about';
 import { Project } from './modules/project';
 import { Skill } from './modules/skill';
 import { Notfound } from './modules/notfound';
-import { LayoutCustom } from './modules/layout';
+import { Layout } from './modules/layout';
 
 
 const App: FC = () => {
   return (
     <>
-      <LayoutCustom>
+      <Layout>
         <Switch>
           <Route exact path="/"   component={() => <Home />} />
           <Route path="/about"    component={() => <About />} />
@@ -20,7 +20,7 @@ const App: FC = () => {
           <Route path="/skill"    component={() => <Skill />} />
           <Route path="/*"        component={() => <Notfound />} />
         </Switch>
-      </LayoutCustom>
+      </Layout>
     </>
   )
 }

@@ -7,7 +7,9 @@ const Layout: React.FC = ({ children }) => {
   return (
     <>
       <Header />
-      {children}
+      <div style={{ height: `${window.innerHeight - (40*2)}px`, marginTop: '45px' }}>
+        { children }
+      </div>
       <Footer />
     </>
   )
