@@ -1,0 +1,15 @@
+.container {
+  padding: 20px;
+}
+
+.contentTitle {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.proContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
