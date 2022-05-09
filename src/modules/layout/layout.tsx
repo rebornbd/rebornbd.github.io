@@ -1,6 +1,7 @@
 import React from "react";
-import { Footer } from "../share/footer";
-import { Header } from "../share/header";
+import { Footer } from "../shared/footer";
+import { Header } from "../shared/header";
+
 
 const Layout: React.FC = ({ children }) => {
   const MainContent = (): JSX.Element => {

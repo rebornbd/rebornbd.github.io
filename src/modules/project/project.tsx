@@ -1,6 +1,7 @@
 import React from 'react'
 
 import ProjectCard from "./components/projectCard";
+import { PageTitle } from "../shared/common/pageTitle";
 import { PROJECTS } from '../../data/project/project';
 import styles from "./project.module.css";
 
@@ -10,7 +11,7 @@ const Project = () => {
   
   return (
     <div className={styles.container}>
-      <div className={styles.contentTitle}>Featured Projects</div>
+      <PageTitle title="Featured Projects" />
       <div className={styles.proContent}>
         {projects && projects.map((pro, index) => (
           <ProjectCard

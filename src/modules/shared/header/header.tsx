@@ -1,8 +1,9 @@
 import { Drawer } from 'antd';
 import { useHistory, useParams } from 'react-router';
 import { useLocation, Link } from "react-router-dom";
+import { BsThreeDots as ThreeDotsIcon } from "react-icons/bs";
+import { BiMenu as NavDrawerIcon } from "react-icons/bi";
 import { VscCode as ProLogoIcon } from "react-icons/vsc";
-import { IoListOutline as NavDrawerIcon } from "react-icons/io5";
 import React, { useState, useEffect } from 'react';
 import styles from "./header.module.css";
 
@@ -13,10 +14,13 @@ const Header: React.FC = () => {
 
   const history = useHistory();
   const queryPath = useLocation();
-  const navs = [{path: "/",         value: "Home"},
-                {path: "/project",  value: "Project"},
-                {path: "/skill",    value: "Skill"},
-                {path: "/about",    value: "About"}];
+  const navs = [
+    {path: "/",         value: "Home"},
+    {path: "/about",    value: "About"},
+    {path: "/project",  value: "Project"},
+    {path: "/skill",    value: "Skill"},
+    {path: "/contact",  value: "Contact"}
+  ];
   
   useEffect(() => {
     if (currPath === "" && queryPath !== null) {
@@ -36,7 +40,7 @@ const Header: React.FC = () => {
         <div
           onClick={() => navlinkHandler("/")}
           className={styles.headerLogo}>
-          <ProLogoIcon className={styles.headerLogoIcon} /><span> Dipta | Portfolio</span>
+          <ProLogoIcon className={styles.headerLogoIcon} />
         </div>
       </>
     )
@@ -64,7 +68,7 @@ const Header: React.FC = () => {
   const DrawerComp = () => {
     return (
       <Drawer
-        title={<span className={styles.drawerTitle}>Dipta - Portfolio</span>}
+        title={<span className={styles.drawerTitle}><ThreeDotsIcon /></span>}
         placement={'right'}
         closable={false}
         onClose={() => setIsVisible(false)}

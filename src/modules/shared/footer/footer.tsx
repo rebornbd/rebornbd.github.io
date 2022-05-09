@@ -58,13 +58,19 @@ const Footer: React.FC = () => {
 
   return (
     <footer className={styles.container}>
-      <div className={styles.footerCopyright}>Copyright &copy; {getCurrentYear()}</div>
+      <div className={styles.footerCopyright}>
+        Copyright &copy; {getCurrentYear()}
+      </div>
+      <div className={styles.footerCopyright}>
+        Designed &amp; Developed with ♡ by dipta
+      </div>
       <div className={styles.footerSocialsIcon}>
-        {socialsLinks && socialsLinks.map(socialsLink => (
+        {socialsLinks && socialsLinks.map((socialsLink, index) => (
           <SocialIcon
             link={socialsLink?.link}
             title={socialsLink?.title}
             Icon={socialsLink?.icon}
+            key={index}
           />
         ))}
       </div>
