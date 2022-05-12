@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import { Home } from './modules/home';
@@ -10,7 +10,7 @@ import { Notfound } from './modules/notfound';
 import { Layout } from './modules/layout';
 
 
-const App: FC = () => {
+const App = () => {
   return (
     <>
       <Layout>

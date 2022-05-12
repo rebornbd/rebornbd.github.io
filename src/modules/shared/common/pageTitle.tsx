@@ -5,7 +5,8 @@ export const PageTitle = ({
   marginTop,
   marginBottom,
   marginLeft,
-  marginRight
+  marginRight,
+  isUpperCase = true,
 }: {
   title: string;
   fontSize?: Number;
@@ -14,15 +15,18 @@ export const PageTitle = ({
   marginBottom?: Number;
   marginLeft?: Number;
   marginRight?: Number;
+  isUpperCase?: Boolean;
 }) => {
   const myStyle = {
-    fontSize: `${fontSize || 30}px`,
+    fontSize: `${fontSize || 20}px`,
     fontWeight: `${fontWeight || 700}`,
     marginTop: `${marginTop || 0}px`,
     marginBottom: `${marginBottom || 0}px`,
     marginLeft: `${marginLeft || 0}px`,
-    marginRight: `${marginRight || 0}px`
+    marginRight: `${marginRight || 0}px`,
   };
 
-  return <div style={myStyle}>{title}</div>;
+  return (isUpperCase)
+    ? <div style={myStyle}>{title.toLocaleUpperCase()}</div>
+    : <div style={myStyle}>{title}</div>
 };

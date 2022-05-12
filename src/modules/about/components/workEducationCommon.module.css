@@ -1,0 +1,71 @@
+/* Heading */
+.heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.icon {
+  font-size: 18px;
+  margin-right: 5px;
+}
+.label {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* ExperienceLine */
+.experienceLine {
+  border-left: 2px solid #313131;
+  margin-right: 5px;
+}
+
+/* DataCircle */
+.dataCircle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #313131;
+}
+
+/* Logo */
+.logo img {
+  height: 40px;
+  width: 100px;
+  padding: 2px;
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+}
+
+/* NameTimeDuration */
+.organizationNameTimeDurationContent {
+  display: flex;
+  align-items: center;
+}
+.organizationName {
+  font-size: 18px;
+  font-weight: 600;
+}
+.timeDuration {
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+/* DesinationEmploymentType */
+.desination {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* Location */
+.locationContent {
+  display: flex;
+  align-items: center;
+}
+.locationIcon {
+  margin-right: 5px;
+}
+.location {
+  font-size: 13px;
+  font-weight: 600;
+}

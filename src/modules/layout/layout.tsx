@@ -1,6 +1,6 @@
 import React from "react";
 import { Footer } from "../shared/footer";
-import { Header } from "../shared/header";
+import Header from "../../components/header";
 
 
 const Layout: React.FC = ({ children }) => {
@@ -9,7 +9,7 @@ const Layout: React.FC = ({ children }) => {
       <div
         style={{
           minHeight: `${window.innerHeight - (40+30)}px`,
-          marginTop: "45px",
+          marginTop: "40px",
         }}
       >
         {children}
