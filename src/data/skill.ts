@@ -20,6 +20,12 @@ import {
   CssIcon,
   DjangoIcon,
   PythonIcon,
+
+  BackendIcon,
+  FrontendIcon,
+  CrossPlatformIcon,
+  DatabaseIcon,
+  LanguageIcon,
 } from "../components/icons";
 
 
@@ -33,6 +39,7 @@ export type skillItemOrArrayItemProps =
   [skillItemProps, skillItemProps]
 
 export type skillItemsProps = {
+  icon: IconType;
   label: string;
   data: Array<skillItemOrArrayItemProps>;
 }
@@ -48,15 +55,17 @@ type skillObjectProps = {
 
 export const SKILL: skillObjectProps = {
   backend: {
+    icon: BackendIcon,
     label: "Backend",
     data: [
       [{ label: "Node JS", icon: NodejsIcon }, { label: "Express JS", icon: ExpressjsIcon }],
       [{ label: "Python", icon: PythonIcon }, { label: "Django", icon: DjangoIcon }],
-      [{ label: "Java", icon: JavaIcon }, { label: "Springboot", icon: SpringbootIcon }]
+      // [{ label: "Java", icon: JavaIcon }, { label: "Springboot", icon: SpringbootIcon }]
     ]
   },
 
   frontend: {
+    icon: FrontendIcon,
     label: "Frontend",
     data: [
       [{ label: "React", icon: ReactIcon }, { label: "Next js", icon: NextjsIcon }],
@@ -68,6 +77,7 @@ export const SKILL: skillObjectProps = {
   },
 
   crossPlatform: {
+    icon: CrossPlatformIcon,
     label: "Cross Platform",
     data: [
       [{ label: "Dart", icon: DartIcon }, { label: "Flutter", icon: FlutterIcon }],
@@ -75,18 +85,19 @@ export const SKILL: skillObjectProps = {
   },
 
   language: {
+    icon: LanguageIcon,
     label: "Language",
     data: [
       { label: "Javascript", icon: JavascriptIcon },
       { label: "Typescript", icon: TypescriptIcon },
       { label: "Python", icon: PythonIcon },
-      [{ label: "C", icon: CIcon },
-      { label: "C++", icon: CplusplusIcon }],
+      [{ label: "C", icon: CIcon }, { label: "C++", icon: CplusplusIcon }],
       { label: "Java", icon: JavaIcon },
     ]
   },
 
   database: {
+    icon: DatabaseIcon,
     label: "Database",
     data: [
       { label: "MySQL", icon: MySQLIcon },

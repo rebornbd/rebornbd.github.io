@@ -1,9 +1,4 @@
 import React from 'react'
-
-import {
-  workProps,
-  WORK
-} from '../../data/work';
 import styles from "./contact.module.css";
 
 
@@ -11,10 +6,6 @@ const Contact = () => {
   return (
     <div>
       Contact
-
-      {WORK && WORK.map(work => (
-        <img src={work.icon} key={work.icon} />
-      ))}
 
       <div>
         {/* <iframe 

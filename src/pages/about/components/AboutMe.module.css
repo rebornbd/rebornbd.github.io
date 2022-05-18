@@ -1,0 +1,9 @@
+.contentAboutMe {
+
+}
+
+.innerContent {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}

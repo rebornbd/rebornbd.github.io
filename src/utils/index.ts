@@ -1,7 +1,7 @@
 import moment from "moment";
 
 
-const getExperience = (startDate: string, endDate: string) => {
+export const getExperience = (startDate: string, endDate: string) => {
   const validEndDate = (endDate === "Present")
     ? moment(new Date())
     : endDate;
@@ -23,7 +23,19 @@ const getExperience = (startDate: string, endDate: string) => {
   return experience;
 }
 
+export const isNameValid = (name: string) => {
+  return (name.length > 0)
+    ? true
+    : false;
+};
 
-export {
-  getExperience
+export const isEmailValid = (email: string) => {
+  var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+};
+
+export const isMessageValid = (message: string) => {
+  return (message.length > 0)
+    ? true
+    : false;
 };

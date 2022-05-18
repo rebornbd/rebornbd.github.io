@@ -1,13 +1,14 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import { Home } from './modules/home';
-import { About } from './modules/about';
-import { Contact } from './modules/contact';
-import { Project, ViewProject } from './modules/project';
-import { Skill } from './modules/skill';
-import { Notfound } from './modules/notfound';
-import { Layout } from './modules/layout';
+import { Home } from './pages/home';
+import { About } from './pages/about';
+import { Contact } from './pages/contact';
+// import { Project, ViewProject } from './modules/project';
+import { Project } from './pages/project';
+import { Skill } from './pages/skill';
+import { Notfound } from './pages/notfound';
+import { Layout } from './layout';
 
 
 const App = () => {
@@ -18,7 +19,7 @@ const App = () => {
           <Route exact path="/"   component={() => <Home />} />
           <Route path="/about"    component={() => <About />} />
           <Route path="/contact"  component={() => <Contact />} />
-          <Route path="/project/:projectName"  component={() => <ViewProject />} />
+          {/* <Route path="/project/:projectName"  component={() => <ViewProject />} /> */}
           <Route path="/project"  component={() => <Project />} />
           <Route path="/skill"    component={() => <Skill />} />
           <Route path="/*"        component={() => <Notfound />} />

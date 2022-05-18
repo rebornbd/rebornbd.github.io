@@ -5,7 +5,7 @@ import ProPic4 from "../images/project/proPic4.jpeg";
 import ProPic5 from "../images/project/proPic5.jpg";
 
 
-interface projectProps {
+export interface projectProps {
   image: string;
   title: string;
   description: string;
@@ -17,7 +17,35 @@ interface projectProps {
 export const PROJECT = [
   {
     image: ProPic1,
-    title: "Reactive Resume",
+    title: "Reactive Resume Pro-01",
+    description: `A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever.`,
+    github: "https://github.com/AmruthPillai/Reactive-Resume/",
+    website: "https://rxresu.me/",
+    tags: [
+      "opensource",
+      "webdev",
+      "frontend",
+      "react",
+      "tailwindcss"
+    ]
+  },
+  {
+    image: ProPic2,
+    title: "Reactive Resume Pro-02",
+    description: `A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever.`,
+    github: "https://github.com/AmruthPillai/Reactive-Resume/",
+    website: "https://rxresu.me/",
+    tags: [
+      "opensource",
+      "webdev",
+      "frontend",
+      "react",
+      "tailwindcss"
+    ]
+  },
+  {
+    image: ProPic3,
+    title: "Reactive Resume Pro-03",
     description: `A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever.`,
     github: "https://github.com/AmruthPillai/Reactive-Resume/",
     website: "https://rxresu.me/",

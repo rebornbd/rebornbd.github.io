@@ -1,0 +1,36 @@
+.container {
+
+}
+
+.contentProject {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.orientationReverse {
+  flex-direction: row-reverse;
+}
+
+/* item */
+.itemImg {
+  flex: 1;
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.itemDataContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px 50px; */
+}

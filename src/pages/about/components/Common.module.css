@@ -1,0 +1,58 @@
+/* Logo */
+.itemLogo img {
+  height: 40px;
+  width: 100px;
+  padding: 2px;
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+}
+
+/* TitlePeriod */
+.titlePeriodContent {
+  display: flex;
+  align-items: center;
+}
+.itemTitle {
+  font-size: 18px;
+  font-weight: 600;
+}
+.itemPeriod {
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+/* itemDesination */
+.itemDesination {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* Location */
+.locationContent {
+  display: flex;
+  align-items: center;
+}
+.locationIcon {
+  margin-right: 5px;
+}
+.location {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Specializations */
+.specializationsContent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  width: 200px;
+}
+.specializationLabel {
+  font-size: 13px;
+  font-weight: 600;
+}
+.specializationItem {
+  font-size: 13px;
+  font-weight: 400;
+}

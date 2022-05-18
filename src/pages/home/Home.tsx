@@ -1,7 +1,7 @@
 import Typewriter from 'typewriter-effect';
 import { useHistory } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
-import styles from "./home.module.css";
+import styles from "./Home.module.css";
 
 
 const Home = () => {

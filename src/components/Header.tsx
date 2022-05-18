@@ -10,8 +10,8 @@ import {
   ThreeDotsIcon,
   NavDrawerIcon,
   ProLogoIcon
-} from "../components/Icons";
-import styles from "./header.module.css";
+} from "../components/icons";
+import styles from "./Header.module.css";
 
 
 const Header = () => {
