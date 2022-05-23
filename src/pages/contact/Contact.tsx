@@ -6,11 +6,12 @@ import {
   Textarea,
   Heading,
   Button,
+  Social
 } from "../../components";
 import {
   ContactFormIcon,
   GetInTouchIcon,
-} from "../../components/icons";
+} from "../../components/Icons";
 import {
   getInTouchSrc
 } from "../../markdown";
@@ -53,22 +54,6 @@ const Contact = () => {
     console.log("clicked! form ", isFormValid());
   }
 
-  const Social = ({ social }: { social: socialProps }) => {
-    return (
-      <a
-        className={styles.social}
-        href={social.link}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <social.icon
-          title={social.title}
-          className={styles.socialIcon}
-        />
-      </a>
-    )
-  }
-
   const GetInTouch = () => {
     return (
       <>
@@ -77,11 +62,8 @@ const Contact = () => {
           <div className={styles.getInTouchText}>
             {getInTouchMDText}
           </div>
-          <div className={styles.getInTouchLinks}>
-            {SOCIALS && SOCIALS.map(social => (
-              <Social social={social} key={social.title} />
-            ))}
-          </div>
+
+          <Social pt={10} pb={20} />
         </div>
       </>
     )

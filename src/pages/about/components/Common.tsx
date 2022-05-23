@@ -1,6 +1,6 @@
 import {
   LocationIcon
-} from "../../../components/icons";
+} from "../../../components/Icons";
 import styles from "./Common.module.css";
 
 

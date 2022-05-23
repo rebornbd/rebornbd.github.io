@@ -1,6 +1,6 @@
 import { Heading } from "../../../components/Heading";
 import { Circle } from "../../../components/Circle";
-import { GraduationCapIcon } from "../../../components/icons";
+import { GraduationCapIcon } from "../../../components/Icons";
 import {
   ItemLine,
   ItemLogo,

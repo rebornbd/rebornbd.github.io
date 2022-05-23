@@ -26,7 +26,7 @@ import {
   CrossPlatformIcon,
   DatabaseIcon,
   LanguageIcon,
-} from "../components/icons";
+} from "../components/Icons";
 
 
 export type skillItemProps = {

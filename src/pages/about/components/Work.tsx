@@ -1,6 +1,6 @@
 import { Heading } from "../../../components/Heading";
 import { Circle } from "../../../components/Circle";
-import { WorkIcon } from "../../../components/icons";
+import { WorkIcon } from "../../../components/Icons";
 import {
   ItemLine,
   ItemLogo,

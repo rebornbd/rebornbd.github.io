@@ -44,8 +44,10 @@ const Home = () => {
 
   return (
     <div className={styles.container}>
-      <HeroCube />
-      <Hero />
+      <div className={styles.innerContainer}>
+        <HeroCube />
+        <Hero />
+      </div>
     </div>
   )
 }

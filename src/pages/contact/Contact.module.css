@@ -16,29 +16,3 @@
   font-weight: 500;
   word-spacing: 0.1px;
 }
-
-.getInTouchLinks {
-  display: flex;
-  gap: 10px;
-}
-
-.social {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-  padding: 10px;
-  background-color: #303030;
-  border-radius: 50%;
-  color: #65C18C;
-}
-
-.social:hover, .social:active {
-  color: #84ffb7;
-  background-color: #3a3a3a;
-}
-
-.socialIcon {
-  font-size: 18px;
-}

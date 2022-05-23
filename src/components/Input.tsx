@@ -19,8 +19,9 @@ export const Input = ({ value, label, setHandler, type="text", placeholder="" }:
         required
         style={{
           padding: '2px 5px',
-          border: '1px solid #303030',
-          borderRadius: "2px"
+          border: '2px solid #303030',
+          borderRadius: "2px",
+          backgroundColor: 'transparent',
         }}
       />
     </div>

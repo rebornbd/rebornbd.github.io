@@ -10,7 +10,7 @@ import {
   ThreeDotsIcon,
   NavDrawerIcon,
   ProLogoIcon
-} from "../components/icons";
+} from "../components/Icons";
 import styles from "./Header.module.css";
 
 

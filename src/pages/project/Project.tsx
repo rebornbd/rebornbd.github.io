@@ -6,7 +6,7 @@ import {
 } from "../../components";
 import {
   ContactFormIcon
-} from "../../components/icons";
+} from "../../components/Icons";
 import {
   projectProps,
   PROJECT as PROJECTS

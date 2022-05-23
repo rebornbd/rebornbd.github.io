@@ -8,7 +8,7 @@ import {
 import {
   aboutmeMarkdownSrc
 } from "../../../markdown";
-import { PersonIcon } from "../../../components/icons";
+import { PersonIcon } from "../../../components/Icons";
 import AboutmeLogo from "../../../images/about/about-me.svg";
 import styles from "./AboutMe.module.css";
 

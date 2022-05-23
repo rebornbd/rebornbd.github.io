@@ -8,7 +8,7 @@ import {
 import {
   musicMarkdownSrc
 } from "../../../markdown";
-import { MusicNoteIcon } from "../../../components/icons";
+import { MusicNoteIcon } from "../../../components/Icons";
 import styles from "./Music.module.css";
 
 

@@ -18,8 +18,9 @@ export const Textarea = ({ value, label, setHandler, rows=5, placeholder="" }: t
         required
         style={{
           padding: '2px 5px',
-          border: '1px solid #303030',
-          borderRadius: "2px"
+          border: '2px solid #303030',
+          borderRadius: "2px",
+          backgroundColor: 'transparent',
         }}
       />
     </div>

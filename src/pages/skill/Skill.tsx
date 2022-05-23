@@ -5,7 +5,7 @@ import {
 } from "../../components";
 import {
   ToolsIcon
-} from "../../components/icons";
+} from "../../components/Icons";
 import {
   skillItemProps,
   skillItemOrArrayItemProps,

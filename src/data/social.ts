@@ -6,7 +6,7 @@ import {
   StackoverflowIcon,
   FacebookIcon,
   InstagramIcon,
-} from "../components/icons";
+} from "../components/Icons";
 
 
 export interface socialProps {
