@@ -1,0 +1,59 @@
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.textNoSelect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+            supported by Chrome, Edge, Opera and Firefox */
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  width: max(220px, min(320px, calc(100% - 100px)));
+}
+
+.name {
+  font-size: 50px;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 3px;
+  word-spacing: 2px;
+  opacity: 0.85;
+}
+
+
+/* MEDIA QUERY */
+@media screen and (min-width: 1024px) {
+  .container {
+    justify-content: flex-start;
+    padding-left: 30px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .container {
+    padding-left: 100px;
+  }
+}
+
+
+@media screen and (max-width: 426px) {
+  .name {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .name {
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+  }
+}

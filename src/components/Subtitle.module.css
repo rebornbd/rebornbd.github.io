@@ -1,0 +1,49 @@
+.container {
+  font-size: 16px;
+  font-weight: 500;
+
+  --PADDING: 10px;
+}
+
+.pl {
+  padding-left: 5px;
+  padding-left: var(--PADDING);
+}
+
+.pr {
+  padding-right: 5px;
+  padding-right: var(--PADDING);
+}
+
+.constEqual {
+  color: #2563eb;
+}
+
+.ingredient {
+  color: #34d399;
+}
+
+
+.lovesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 25px;
+  width: 100%;
+}
+
+.loveItem {
+  color: #eb2525;
+}
+
+
+@media screen and (max-width: 426px) {
+  .container {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .container {
+    font-size: 13px;
+  }
+}

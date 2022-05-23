@@ -32,6 +32,7 @@ import {
 } from "react-icons/di";
 import {
   BsThreeDots as ThreeDotsIcon,
+  BsInstagram as InstagramIcon
 } from "react-icons/bs";
 import {
   MdWork as WorkIcon,
@@ -41,6 +42,7 @@ import {
   MdDevices as FrontendIcon,
   MdDevicesOther as CrossPlatformIcon,
   MdTouchApp as GetInTouchIcon,
+  MdFacebook as FacebookIcon
 } from "react-icons/md";
 import {
   GoTools as ToolsIcon
@@ -48,7 +50,9 @@ import {
 import {
   RiDeviceFill as BackendIcon
 } from "react-icons/ri";
-import { BiMenu as NavDrawerIcon } from "react-icons/bi";
+import {
+  BiMenu as NavDrawerIcon,
+} from "react-icons/bi";
 import { VscCode as ProLogoIcon } from "react-icons/vsc";
 import { IoIosPaperPlane as ContactFormIcon } from "react-icons/io";
 
@@ -92,4 +96,6 @@ export {
   LanguageIcon,
   ContactFormIcon,
   GetInTouchIcon,
+  FacebookIcon,
+  InstagramIcon,
 };

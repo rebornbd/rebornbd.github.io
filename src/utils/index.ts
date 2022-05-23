@@ -23,6 +23,13 @@ export const getExperience = (startDate: string, endDate: string) => {
   return experience;
 }
 
+export const getHostname = () => {
+  const protocol = window.location.protocol;
+  const host = window.location.host;
+  const hostName = `${protocol}//${host}`;
+  return hostName;
+}
+
 export const isNameValid = (name: string) => {
   return (name.length > 0)
     ? true

@@ -6,6 +6,9 @@ import { Iframe } from "./Iframe";
 import { Input } from "./Input";
 import { Textarea } from "./Textarea";
 import { Button } from "./Button";
+import { Subtitle } from "./Subtitle";
+import { Social } from "./Social";
+import { DownloadLink } from "./DownloadLink";
 
 
 export {
@@ -17,4 +20,7 @@ export {
   Input,
   Textarea,
   Button,
+  Subtitle,
+  Social,
+  DownloadLink,
 };

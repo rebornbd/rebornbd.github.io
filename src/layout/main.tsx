@@ -7,10 +7,13 @@ const MainLayout: FC = ({ children }) => {
   const styles = {
     minHeight: `${window.innerHeight - (40+30)}px`,
     marginTop: "40px",
-    padding: "20px 50px"
+    padding: "20px 50px",
+
+    backgroundColor: "#000000",
+    color: "#ffffff",
   };
 
-  const MainContent = (): JSX.Element => {
+  const MainContent = () => {
     return (
       <div style={styles}>
         {children}
