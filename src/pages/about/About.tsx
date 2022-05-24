@@ -9,6 +9,7 @@ const About = () => {
   return (
     <div className={styles.container}>
       <AboutMe />
+      
       <div className={styles.innerContainer}>
         <Work />
         <Education />

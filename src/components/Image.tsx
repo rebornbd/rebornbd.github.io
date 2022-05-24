@@ -14,7 +14,7 @@ export const Image = ({
   height=200,
   alt="",
   flex=0,
-  minWidth=250 }: imageProps) => {
+  minWidth=220 }: imageProps) => {
   return (
     <img
       src={src}

@@ -1,12 +1,3 @@
-import {
-  Face1,
-  Face2,
-  Face3,
-  Face4,
-  Face5,
-  Face6,
-} from "./dark";
-
 // import {
 //   Face1,
 //   Face2,
@@ -14,7 +5,16 @@ import {
 //   Face4,
 //   Face5,
 //   Face6,
-// } from "./normal";
+// } from "./dark";
+
+import {
+  Face1,
+  Face2,
+  Face3,
+  Face4,
+  Face5,
+  Face6,
+} from "./normal";
 
 
 export {

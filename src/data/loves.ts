@@ -1,9 +1,9 @@
 export const LOVES: Array<string> = [
+  "System Analyst",
   "Designer",
   "Developer",
-  "Coder",
+  "Competitive Programmer",
   "Problem Solver",
-  "System Analyst",
   "Chess Player",
   "...teamMember"
 ];

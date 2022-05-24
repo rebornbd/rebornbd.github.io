@@ -24,12 +24,27 @@ export const AboutMe = () => {
       })
   }, []);
 
+
   return (
     <div className={styles.contentAboutMe}>
-      <Heading icon={PersonIcon} title="About Me" mb={20} />
+      <Heading
+        icon={PersonIcon}
+        title="About Me"
+        mb={20}
+      />
+
       <div className={styles.innerContent}>
-        <Image src={AboutmeLogo} flex={1} />
-        <InsertInnerHtml text={aboutmeMDText} flex={3} />
+        <Image
+          src={AboutmeLogo}
+          flex={1}
+        />
+
+        <InsertInnerHtml
+          text={aboutmeMDText}
+          fontSize={16}
+          fontWeight={400}
+          flex={3}
+        />
       </div>
     </div>
   )

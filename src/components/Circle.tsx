@@ -1,13 +1,19 @@
 import { Tooltip } from 'antd';
 
 
-export const Circle = ({ timePeriod="", radius=15 }: { timePeriod?: string; radius?: Number }) => {
+interface circleProps {
+  timePeriod?: string;
+  radius?: number;
+  bgColor?: string;
+}
+
+export const Circle = ({ timePeriod="", radius=15, bgColor="#444444" }: circleProps) => {
   const styles = {
+    marginTop: '15px',
     width: `${radius}px`,
     height: `${radius}px`,
+    backgroundColor: bgColor,
     borderRadius: '500px',
-    backgroundColor: '#000000',
-    marginTop: '15px'
   };
 
 

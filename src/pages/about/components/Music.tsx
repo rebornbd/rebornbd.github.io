@@ -26,7 +26,7 @@ export const Music = () => {
 
   return (
     <div className={styles.musicContent}>
-      <Heading icon={MusicNoteIcon} title="Music" mt={20} />
+      <Heading icon={MusicNoteIcon} title="Music" />
       <InsertInnerHtml text={musicMDText} />
       <Iframe
         src="https://open.spotify.com/embed/playlist/2D86K0ACtMHtUKiEYer2FW?utm_source=generator"

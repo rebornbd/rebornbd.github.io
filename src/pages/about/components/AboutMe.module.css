@@ -1,5 +1,8 @@
 .contentAboutMe {
+  --MIDDLE_HALF_GAP: 50px;
 
+  padding-bottom: 50px;
+  padding-bottom: var(--MIDDLE_HALF_GAP);
 }
 
 .innerContent {

@@ -4,7 +4,7 @@ import {
 import styles from "./Common.module.css";
 
 
-export const ItemLine = ({ color="#000000" }: { color?: string }) => {
+export const ItemLine = ({ color="#444444" }: { color?: string }) => {
   const styles = {
     borderLeft: `2px solid ${color}`
   };
