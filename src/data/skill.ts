@@ -93,6 +93,7 @@ export const SKILL: skillObjectProps = {
       { label: "Python", icon: PythonIcon },
       [{ label: "C", icon: CIcon }, { label: "C++", icon: CplusplusIcon }],
       { label: "Java", icon: JavaIcon },
+      { label: "Dart", icon: DartIcon },
     ]
   },
 

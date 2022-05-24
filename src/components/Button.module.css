@@ -1,0 +1,9 @@
+.labelContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  padding-left: 10px;
+}

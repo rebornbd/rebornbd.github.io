@@ -17,8 +17,8 @@ export const DownloadLink = (
 {
   url,
   value,
-  color = '#ffffff',
-  bgColor = '#52734D',
+  color = '#dddddd',
+  bgColor = '#2C394B',
   pl = 0, 
   pr = 0, 
   pt = 0, 

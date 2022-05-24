@@ -1,8 +1,13 @@
 .container {
-
+  --MIDDLE_HALF_GAP: 50px;
 }
 
 .getInTouchContainer {
+  padding-bottom: 50px;
+  padding-bottom: var(--MIDDLE_HALF_GAP);
+}
+
+.getInTouchInnerContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,4 +20,39 @@
   font-size: 16px;
   font-weight: 500;
   word-spacing: 0.1px;
+}
+
+/* contactForm */
+.contactFormContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding-bottom: 50px;
+  padding-bottom: var(--MIDDLE_HALF_GAP);
+}
+
+.contactFormItems {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  min-width: 220px;
+}
+
+.contactFormEmptySpace {
+  flex: 1;
+  min-width: 220px;
+}
+
+
+
+@media screen and (max-width: 769px) {
+  .getInTouchInnerContainer {
+    padding: 0 10%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .getInTouchInnerContainer {
+    padding: 0;
+  }
 }

@@ -9,8 +9,8 @@ const MainLayout: FC = ({ children }) => {
     marginTop: "40px",
     padding: "20px 50px",
 
-    backgroundColor: "#000000",
-    color: "#ffffff",
+    backgroundColor: "#121212",
+    color: "#dddddd",
   };
 
   const MainContent = () => {

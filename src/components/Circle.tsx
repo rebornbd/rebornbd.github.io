@@ -7,7 +7,7 @@ interface circleProps {
   bgColor?: string;
 }
 
-export const Circle = ({ timePeriod="", radius=15, bgColor="#444444" }: circleProps) => {
+export const Circle = ({ timePeriod="", radius=15, bgColor="#7F8487" }: circleProps) => {
   const styles = {
     marginTop: '15px',
     width: `${radius}px`,

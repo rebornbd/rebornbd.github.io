@@ -20,10 +20,6 @@ import {
   isEmailValid,
   isMessageValid
 } from "../../utils";
-import {
-  socialProps,
-  SOCIALS
-} from "../../data/social";
 import styles from "./Contact.module.css";
 
 
@@ -56,16 +52,16 @@ const Contact = () => {
 
   const GetInTouch = () => {
     return (
-      <>
-        <Heading icon={GetInTouchIcon} title="Get In Touch" />
-        <div className={styles.getInTouchContainer}>
+      <div className={styles.getInTouchContainer}>
+        <Heading icon={GetInTouchIcon} title="Get In Touch" mb={20} />
+        <div className={styles.getInTouchInnerContainer}>
           <div className={styles.getInTouchText}>
             {getInTouchMDText}
           </div>
 
-          <Social pt={10} pb={20} />
+          <Social pt={25} />
         </div>
-      </>
+      </div>
     )
   }
   
@@ -74,27 +70,38 @@ const Contact = () => {
     <div className={styles.container}>
       <GetInTouch />
 
-      <Heading icon={ContactFormIcon} title="Contact" mt={20} mb={10} />
-      <Input
-        value={name}
-        label="Full Name"
-        setHandler={setName}
-        placeholder="Enter Your Full Name"
-      />
-      <Input
-        value={email}
-        label="Email"
-        setHandler={setEmail}
-        placeholder="Enter Your Email"
-      />
-      <Textarea
-        value={message}
-        label="Message"
-        setHandler={setMessage}
-        placeholder="Enter Your Message"
-      />
+      <Heading icon={ContactFormIcon} title="Contact" mb={20} />
+      <div className={styles.contactFormContainer}>
+        <div className={styles.contactFormItems}>
+          <Input
+            value={name}
+            label="Full Name"
+            setHandler={setName}
+            placeholder="Enter Your Full Name"
+          />
+          <Input
+            value={email}
+            label="Email"
+            setHandler={setEmail}
+            placeholder="Enter Your Email"
+          />
+          <Textarea
+            value={message}
+            label="Message"
+            setHandler={setMessage}
+            placeholder="Enter Your Message"
+          />
 
-      <Button label={buttonText} onClickHandler={formSubmitHandler} />
+          <Button
+            label={buttonText}
+            onClickHandler={formSubmitHandler}
+            Icon={ContactFormIcon}
+          />
+        </div>
+
+        <div className={styles.contactFormEmptySpace}>
+        </div>
+      </div>
     </div>
   )
 }
