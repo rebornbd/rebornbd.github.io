@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7ae1128c.css",
+    "main.js": "/static/js/main.4da5cf70.js",
+    "static/media/proPic5.jpg": "/static/media/proPic5.b5800952cc706a3fa6e2.jpg",
+    "static/media/about-me.svg": "/static/media/about-me.341842f448a820ebdd2b4c57c0d3a9a6.svg",
+    "static/media/proPic1.jpg": "/static/media/proPic1.8cfec06920888c412df6.jpg",
+    "static/media/bsmrstu.svg": "/static/media/bsmrstu.b53113c71e2a700a83b5259b11f576ed.svg",
+    "static/media/sundali.svg": "/static/media/sundali.650f4a0287393a0907dcdd6e1a313328.svg",
+    "static/media/dkh.svg": "/static/media/dkh.8a75a40157aebf8dd5a8794cdb900491.svg",
+    "service-worker.js": "/service-worker.js",
+    "static/media/name.png": "/static/media/name.f54f71f57bc39054e773.png",
+    "static/media/five.jpg": "/static/media/five.570babc6a6159b9a89f6.jpg",
+    "static/media/four.jpg": "/static/media/four.d2e076151fe245d372d6.jpg",
+    "static/media/three.jpg": "/static/media/three.4780ce262d4d03c60e45.jpg",
+    "static/media/two.jpg": "/static/media/two.7820ef826fb7534b23e3.jpg",
+    "static/media/kLoud.svg": "/static/media/kLoud.e6a179da5e61215ca4b2118d0fe5b8c4.svg",
+    "static/media/biziitech.svg": "/static/media/biziitech.4be35323381de290021f9ab4529373a6.svg",
+    "static/media/six.jpg": "/static/media/six.8e9dfba9979887535752.jpg",
+    "static/media/default.jpg": "/static/media/default.28fb91a3602f04c9ee19.jpg",
+    "static/media/one.jpg": "/static/media/one.28fb91a3602f04c9ee19.jpg",
+    "static/media/proPic3.jpeg": "/static/media/proPic3.c1c8f859543ea270b1f5.jpeg",
+    "static/media/proPic4.jpeg": "/static/media/proPic4.a1dc6c0b3d018bb96558.jpeg",
+    "static/media/aqchowdhury.svg": "/static/media/aqchowdhury.c5b95735116bab4a8a9334ac1cfb48c1.svg",
+    "index.html": "/index.html",
+    "static/media/about-me.md": "/static/media/about-me.be678baaf7892d3b68e2.md",
+    "static/media/music.md": "/static/media/music.eacdc2f43324afacf648.md",
+    "static/media/get-in-touch.md": "/static/media/get-in-touch.4a7db0d1051a6296b80d.md",
+    "main.7ae1128c.css.map": "/static/css/main.7ae1128c.css.map",
+    "main.4da5cf70.js.map": "/static/js/main.4da5cf70.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ae1128c.css",
+    "static/js/main.4da5cf70.js"
+  ]
+}
