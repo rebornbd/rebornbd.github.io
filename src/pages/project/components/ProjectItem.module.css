@@ -1,0 +1,31 @@
+.projectContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px 50px;
+}
+
+.orientationReverse {
+  flex-direction: row-reverse;
+}
+
+.projectImageContent {
+  flex: 1;
+  display: flex;
+}
+
+.projectInfoContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 180px;
+}
+
+
+@media screen and (max-width: 426px) {
+  .projectImageContent {
+    display: none;
+  }
+}

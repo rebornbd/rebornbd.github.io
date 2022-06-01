@@ -1,1 +1,1 @@
-My inbox is always open if you want to communicate with me. Hit me up if you have some question, want a collaboration or just play a game of chess through the contact form. I'll try to get back to you as soon as I can. And I always love to read your feedback!
+My inbox is always open if you want to communicate with me. Hit me up if you have some question, want a collaboration or just play a game of chess through the contact form. I'll try to get back to you as soon as I can. And I always love to read your message.

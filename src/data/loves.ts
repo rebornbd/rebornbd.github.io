@@ -4,6 +4,7 @@ export const LOVES: Array<string> = [
   "Developer",
   "Competitive Programmer",
   "Problem Solver",
+  "DevOps Engineer",
   "Chess Player",
   "...teamMember"
 ];

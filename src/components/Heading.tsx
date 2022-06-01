@@ -2,10 +2,11 @@ import { IconType } from 'react-icons/lib';
 
 
 interface headingProps {
-  icon: IconType;
   title: string;
+  icon?: IconType;
   fontSize?: Number;
   fontWeight?: Number;
+  color?: string;
   mt?: Number;
   mb?: Number;
   ml?: Number;
@@ -19,6 +20,7 @@ export const Heading = ({
   title,
   fontSize,
   fontWeight,
+  color='inherit',
   mt, mb,
   ml, mr,
   isUpperCase = true,
@@ -33,6 +35,7 @@ export const Heading = ({
   const styles = {
     display: 'flex',
     alignItems: 'center',
+    color: color,
     fontSize:     `${fontSize || DEFAULT_FONT_SIZE}px`,
     fontWeight:   `${fontWeight || DEFAULT_FONT_WEIGHT}`,
     marginTop:    `${mt || DEFAULT_MARGIN}px`,
@@ -46,7 +49,7 @@ export const Heading = ({
 
   return (
     <div style={styles}>
-      <Icon style={{ marginRight: "5px" }} />
+      {Icon && <Icon style={{ marginRight: "5px" }} />}
       <span>{TITLE}</span>
     </div>
   )

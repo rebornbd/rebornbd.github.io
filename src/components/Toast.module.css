@@ -1,0 +1,20 @@
+.toastContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.toastText {
+  flex: 1;
+}
+
+.toastCloseButton {
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.toastCloseButton:hover {
+  color: #a5a5a5;
+}

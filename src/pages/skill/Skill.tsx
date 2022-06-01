@@ -69,7 +69,7 @@ const Skill = () => {
 
     return (
       <div className={styles.skillPlateContainer}>
-        <Heading icon={skills.icon} title={skills.label} fontSize={13} fontWeight={500} />
+        <Heading icon={skills.icon} title={skills.label} fontSize={14} fontWeight={600} mb={5} />
 
         <div className={styles.skillPlateContent}>
           {skillItems && skillItems.map((skillItem, index) => (

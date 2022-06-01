@@ -1,9 +1,11 @@
 import {
+	Image,
 	Subtitle,
 	Social,
 	DownloadLink
 } from "../../../components";
 import { ABOUT } from "../../../data/about";
+import NameImgSrc from "../../../images/name/name.png";
 import { getHostname } from "../../../utils";
 import styles from "./Hero.module.css";
 
@@ -20,7 +22,13 @@ export const Hero = () => {
 	return (
 		<div className={styles.container}>
 			<div className={`${styles.innerContainer} ${styles.textNoSelect}`}>
-				<Name name={ABOUT.FULL_NAME} />
+				{/* <Name name={ABOUT.FULL_NAME} /> */}
+				<Image
+					src={NameImgSrc}
+					height={50}
+					mb={20}
+					alt={ABOUT.FULL_NAME}
+				/>
 				<Subtitle name={ABOUT.SHORT_NAME} />
 				<Social pt={50} pb={20} />
 				<DownloadLink

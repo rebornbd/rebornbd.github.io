@@ -14,7 +14,7 @@ export interface projectProps {
   website?: string;
 }
 
-export const PROJECT = [
+export const PROJECTS: Array<projectProps> = [
   {
     image: ProPic1,
     title: "Reactive Resume Pro-01",
@@ -49,6 +49,44 @@ export const PROJECT = [
     description: `A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever.`,
     github: "https://github.com/AmruthPillai/Reactive-Resume/",
     website: "https://rxresu.me/",
+    tags: [
+      "opensource",
+      "webdev",
+      "frontend",
+      "react",
+      "tailwindcss"
+    ]
+  },
+  {
+    image: ProPic4,
+    title: "Reactive Resume Pro-04",
+    description: `A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever.`,
+    github: "https://github.com/AmruthPillai/Reactive-Resume/",
+    tags: [
+      "opensource",
+      "webdev",
+      "frontend",
+      "react",
+      "tailwindcss"
+    ]
+  },
+  {
+    image: ProPic5,
+    title: "Reactive Resume Pro-05",
+    description: `A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever.`,
+    website: "https://rxresu.me/",
+    tags: [
+      "opensource",
+      "webdev",
+      "frontend",
+      "react",
+      "tailwindcss"
+    ]
+  },
+  {
+    image: ProPic5,
+    title: "Reactive Resume Pro-06",
+    description: `A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever.`,
     tags: [
       "opensource",
       "webdev",

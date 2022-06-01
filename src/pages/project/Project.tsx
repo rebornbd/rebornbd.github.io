@@ -2,62 +2,33 @@ import React from "react";
 
 import {
   Heading,
-  Image
 } from "../../components";
 import {
-  ContactFormIcon
+  ContactFormIcon,
 } from "../../components/Icons";
 import {
+  ProjectItem
+} from "./components/";
+import {
   projectProps,
-  PROJECT as PROJECTS
+  PROJECTS
 } from "../../data/project";
 import styles from "./Project.module.css";
 
 
 const Project = () => {
-  const Item = ({ project, index }: { project: projectProps, index: number }) => {
-    return (
-      <div className={
-        (index%2 === 0)
-          ? `${styles.projectItem}`
-          : `${styles.projectItem} ${styles.orientationReverse}`
-      }>
-        <img
-          src={project.image}
-          alt={project.title}
-          height={300}
-          width="100%"
-          className={styles.itemImg}
-        />
-
-        <div className={styles.itemDataContent}>
-          <div>{project.title}</div>
-          <div>{project.description}</div>
-          <div>{project.github}</div>
-          <div>{project.website}</div>
-        </div>
-      </div>
-    )
-  }
-
-  const Projects = () => {
-    return (
-      <div className={styles.contentProject}>
+  return (
+    <div className={styles.container}>
+      <Heading icon={ContactFormIcon} title="Projects" mb={40} />
+      <div className={styles.projectsContainer}>
         {PROJECTS && PROJECTS.map((project, index) => (
-          <Item
-            project={project} 
+          <ProjectItem
             index={index}
+            project={project} 
             key={project.title}
           />
         ))}
       </div>
-    )
-  }
-
-  return (
-    <div className={styles.container}>
-      <Heading icon={ContactFormIcon} title="Projects" mb={10} />
-      <Projects />
     </div>
   )
 }

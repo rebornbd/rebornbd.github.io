@@ -1,0 +1,14 @@
+.aTag {
+  display: inline;
+}
+
+.aTag:hover {
+  color: #91C483 !important;
+  text-decoration: underline;
+}
+
+.valueContainer {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}

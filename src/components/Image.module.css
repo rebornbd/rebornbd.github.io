@@ -1,0 +1,30 @@
+.imageContainer {
+  flex: 1;
+  position: relative;
+}
+
+.image {
+  display: block;
+  opacity: 1;
+}
+
+.chainIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  font-size: 80px;
+  cursor: pointer;
+
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* hover effect */
+.imageContainer:hover .image {
+  opacity: 0.5;
+}
+
+.imageContainer:hover .chainIcon {
+  opacity: 1;
+}

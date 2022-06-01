@@ -1,4 +1,5 @@
 import WahabIcon from "../images/work/wahab.svg";
+import AqchowdhuryIcon from "../images/work/aqchowdhury.svg";
 import KLoudIcon from "../images/work/kLoud.svg";
 import BiziitechIcon from "../images/work/biziitech.svg";
 
@@ -14,10 +15,10 @@ export interface workProps {
 
 export const WORK: Array<workProps> = [
   {
-    icon: WahabIcon,
-    title: "A Wahab & Co.",
-    subtitle: "Full-Stack Developer, Full-time",
-    period: "Feb 2022 - Present",
+    icon: AqchowdhuryIcon,
+    title: "AQ Chowdhury Ltd.",
+    subtitle: "Full-Stack Developer, Part-time",
+    period: "Jan 2022 - Present",
     location: "Dhaka, Bangladesh",
     specializations: [
       "Node JS",
@@ -35,7 +36,7 @@ export const WORK: Array<workProps> = [
     icon: KLoudIcon,
     title: "KLoud Technologies Limited",
     subtitle: "DevOps Engineer, Full-time",
-    period: "Dec 2019 - Jan 2022",
+    period: "Dec 2019 - Present",
     location: "Dhaka, Bangladesh",
     specializations: [
       "Docker",

@@ -3,7 +3,8 @@ import {
   FaDiscord as DiscordIcon,
   FaGraduationCap as GraduationCapIcon,
   FaDatabase as DatabaseIcon,
-  FaLanguage as LanguageIcon
+  FaLanguage as LanguageIcon,
+  FaLink as LinkIcon
 } from "react-icons/fa";
 import {
   SiNodedotjs as NodejsIcon,
@@ -45,6 +46,12 @@ import {
   MdFacebook as FacebookIcon
 } from "react-icons/md";
 import {
+  IoCloseCircleOutline as CloseCircleOutlineIcon,
+  IoCloseCircle as CloseCircleIcon,
+  IoCheckmarkCircleOutline as CheckmarkCircleOutlineIcon,
+  IoInformationCircleOutline as InformationCircleOutlineIcon
+} from "react-icons/io5"
+import {
   GoTools as ToolsIcon
 } from "react-icons/go";
 import {
@@ -55,6 +62,7 @@ import {
 } from "react-icons/bi";
 import { VscCode as ProLogoIcon } from "react-icons/vsc";
 import { IoIosPaperPlane as ContactFormIcon } from "react-icons/io";
+import { HiOutlineLink as OutlineLinkIcon } from "react-icons/hi";
 
 
 export {
@@ -99,4 +107,10 @@ export {
   GetInTouchIcon,
   FacebookIcon,
   InstagramIcon,
+  CloseCircleOutlineIcon,
+  CheckmarkCircleOutlineIcon,
+  InformationCircleOutlineIcon,
+  CloseCircleIcon,
+  OutlineLinkIcon,
+  LinkIcon,
 };

@@ -8,7 +8,9 @@ import { Textarea } from "./Textarea";
 import { Button } from "./Button";
 import { Subtitle } from "./Subtitle";
 import { Social } from "./Social";
+import { Link } from "./Link";
 import { DownloadLink } from "./DownloadLink";
+import Toast from "./Toast";
 
 
 export {
@@ -22,5 +24,7 @@ export {
   Button,
   Subtitle,
   Social,
+  Link,
   DownloadLink,
+  Toast,
 };

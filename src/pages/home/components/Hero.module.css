@@ -34,16 +34,16 @@
 @media screen and (min-width: 1024px) {
   .container {
     justify-content: flex-start;
-    padding-left: 30px;
+    /* padding-left: 30px; */
   }
 }
 @media screen and (min-width: 1150px) {
   .container {
-    padding-left: 100px;
+    /* padding-left: 50px; */
   }
 }
 
-
+/* 
 @media screen and (max-width: 426px) {
   .name {
     font-size: 40px;
@@ -56,4 +56,4 @@
     letter-spacing: 1px;
     word-spacing: 1px;
   }
-}
+} */

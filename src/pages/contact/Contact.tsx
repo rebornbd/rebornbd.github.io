@@ -1,16 +1,17 @@
 import { useFormspark } from "@formspark/use-formspark";
-import React, { useState, useEffect } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 
 import {
   Input,
   Textarea,
   Heading,
   Button,
-  Social
+  Social,
+  Toast
 } from "../../components";
 import {
   ContactFormIcon,
-  GetInTouchIcon,
+  GetInTouchIcon
 } from "../../components/Icons";
 import {
   getInTouchSrc
@@ -24,13 +25,14 @@ import styles from "./Contact.module.css";
 
 
 const Contact = () => {
-  const [getInTouchMDText, setGetInTouchMDText] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const [getInTouchMDText, setGetInTouchMDText] = useState("");
   const [buttonText, setButtonText] = useState("Send Message");
   const [submit, isSubmitting] = useFormspark({ formId: "nK0fAKaW" });
+  const [isFormSubmit, setIsFormSubmit] = useState<boolean>(false);
 
   useEffect(() => {
     fetch(getInTouchSrc)
@@ -47,7 +49,26 @@ const Contact = () => {
   }
 
   const formSubmitHandler = () => {
-    console.log("clicked! form ", isFormValid());
+    setIsFormSubmit(true);
+
+    if (isFormValid()) {
+      submit({ name, email, message })
+        .then(() => {
+          setIsFormSubmit(false);
+          setButtonText("Message Received!");
+          Toast.success("Form submit successfully!");
+
+          setName("");
+          setEmail("");
+          setMessage("");
+        })
+        .catch(() => {
+          setButtonText("An Error Occurred!");
+          Toast.error("An Error Occurred!");
+        });
+    } else {
+      Toast.error("Form is invalid!");
+    }
   }
 
   const GetInTouch = () => {
@@ -78,18 +99,21 @@ const Contact = () => {
             label="Full Name"
             setHandler={setName}
             placeholder="Enter Your Full Name"
+            isValid={isFormSubmit ? isNameValid(name) : true}
           />
           <Input
             value={email}
             label="Email"
             setHandler={setEmail}
             placeholder="Enter Your Email"
+            isValid={isFormSubmit ? isEmailValid(email) : true}
           />
           <Textarea
             value={message}
             label="Message"
             setHandler={setMessage}
             placeholder="Enter Your Message"
+            isValid={isFormSubmit ? isMessageValid(message) : true}
           />
 
           <Button
