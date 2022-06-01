@@ -19,8 +19,8 @@ export const PROJECTS: Array<projectProps> = [
     image: ProPic1,
     title: "Reactive Resume Pro-01",
     description: `A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever.`,
-    github: "https://github.com/AmruthPillai/Reactive-Resume/",
-    website: "https://rxresu.me/",
+    github: "#",
+    website: "#",
     tags: [
       "opensource",
       "webdev",
@@ -33,8 +33,8 @@ export const PROJECTS: Array<projectProps> = [
     image: ProPic2,
     title: "Reactive Resume Pro-02",
     description: `A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever.`,
-    github: "https://github.com/AmruthPillai/Reactive-Resume/",
-    website: "https://rxresu.me/",
+    github: "#",
+    website: "#",
     tags: [
       "opensource",
       "webdev",
@@ -47,8 +47,8 @@ export const PROJECTS: Array<projectProps> = [
     image: ProPic3,
     title: "Reactive Resume Pro-03",
     description: `A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever.`,
-    github: "https://github.com/AmruthPillai/Reactive-Resume/",
-    website: "https://rxresu.me/",
+    github: "#",
+    website: "#",
     tags: [
       "opensource",
       "webdev",
@@ -61,7 +61,7 @@ export const PROJECTS: Array<projectProps> = [
     image: ProPic4,
     title: "Reactive Resume Pro-04",
     description: `A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever.`,
-    github: "https://github.com/AmruthPillai/Reactive-Resume/",
+    github: "#",
     tags: [
       "opensource",
       "webdev",
@@ -74,7 +74,7 @@ export const PROJECTS: Array<projectProps> = [
     image: ProPic5,
     title: "Reactive Resume Pro-05",
     description: `A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever.`,
-    website: "https://rxresu.me/",
+    website: "#",
     tags: [
       "opensource",
       "webdev",
