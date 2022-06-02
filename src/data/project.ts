@@ -1,8 +1,7 @@
-import ProPic1 from "../images/project/proPic1.jpg";
-import ProPic2 from "../images/project/proPic2.jpg";
-import ProPic3 from "../images/project/proPic3.jpeg";
-import ProPic4 from "../images/project/proPic4.jpeg";
-import ProPic5 from "../images/project/proPic5.jpg";
+import ProPic1 from "../images/project/proPic1.png";
+import ProPic2 from "../images/project/proPic2.png";
+import ProPic3 from "../images/project/proPic3.png";
+import ProPic4 from "../images/project/proPic4.png";
 
 
 export interface projectProps {
@@ -17,82 +16,56 @@ export interface projectProps {
 export const PROJECTS: Array<projectProps> = [
   {
     image: ProPic1,
-    title: "Reactive Resume Pro-01",
-    description: `A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever.`,
-    github: "#",
-    website: "#",
+    title: "WEBbot",
+    description: `WEBbot is a scalable web crawler. Its backend uses Python/Django, Celery for asynchronous task queue. Frontend uses react. This crawler takes single or multiple seed-URL & crawling these pages.`,
+    github: "https://github.com/rebornbd/WEBbot",
     tags: [
-      "opensource",
-      "webdev",
-      "frontend",
-      "react",
-      "tailwindcss"
+      "Python/Django",
+      "Celery",
+      "RabbitMQ",
+      "Requests",
+      "BeautifulSoup",
+      "React",
+      "Javascript"
     ]
   },
   {
     image: ProPic2,
-    title: "Reactive Resume Pro-02",
-    description: `A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever.`,
-    github: "#",
-    website: "#",
+    title: "IPbox",
+    description: `IPbox is an IP management web application. It prevents duplicate IP assign. Its design on a rack server-based architecture.`,
+    github: "https://github.com/rebornbd/IPbox",
     tags: [
-      "opensource",
-      "webdev",
-      "frontend",
-      "react",
-      "tailwindcss"
+      "Python/Django",
+      "MySQL",
+      "Javascript",
+      "HTML/CSS"
     ]
   },
   {
     image: ProPic3,
-    title: "Reactive Resume Pro-03",
-    description: `A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever.`,
-    github: "#",
-    website: "#",
+    title: "Portfolio",
+    description: `Personal portfolio website that is developed with react. Feature plan to build a backend that can update & store data efficiently & more user friendly.`,
+    github: "https://github.com/rebornbd/rebornbd.github.io",
+    website: "https://rebornbd.github.io/",
     tags: [
-      "opensource",
-      "webdev",
-      "frontend",
-      "react",
-      "tailwindcss"
+      "React",
+      "Antd",
+      "Javascript",
+      "Typescript",
+      "HTML/CSS"
     ]
   },
   {
     image: ProPic4,
-    title: "Reactive Resume Pro-04",
-    description: `A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever.`,
-    github: "#",
+    title: "Chess Master",
+    description: `A simple chess game made using alphabetic characters in C.
+    Use your mouse or touchpad to move the chess pieces.
+    Features: (i) Shows the highlighted pieces (ii) Prevents user from making an illegal move (iii) Pawn promotion (iv) Save and Load your game`,
+    github: "https://github.com/dipta-dhar/Chess-Master",
     tags: [
-      "opensource",
-      "webdev",
-      "frontend",
-      "react",
-      "tailwindcss"
+      "C++",
+      "OpenGL",
+      "Chess Tree"
     ]
-  },
-  {
-    image: ProPic5,
-    title: "Reactive Resume Pro-05",
-    description: `A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever.`,
-    website: "#",
-    tags: [
-      "opensource",
-      "webdev",
-      "frontend",
-      "react",
-      "tailwindcss"
-    ]
-  },
-  {
-    image: ProPic5,
-    title: "Reactive Resume Pro-06",
-    description: `A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever.`,
-    tags: [
-      "opensource",
-      "webdev",
-      "frontend",
-      "react",
-      "tailwindcss"
-    ]
-  },
+  }
 ];
