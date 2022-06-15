@@ -32,7 +32,7 @@ const Home = () => {
       Face5,
       Face6
     );
-  }, []);
+  });
 
   const HeroCube = () => {
     return (
